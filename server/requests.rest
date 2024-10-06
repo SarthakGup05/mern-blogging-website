@@ -1,7 +1,21 @@
-POST http://localhost:3000/signin 
+POST http://localhost:3000/create-blog
 Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2ZTFiMThlYzBhYTllMDhkZGJhMjFmNCIsImVtYWlsIjoiYW5qYWxpQGV4YW1wbGUuY29tIiwidXNlcm5hbWUiOiJhbmphbGkiLCJpYXQiOjE3MjYwNjcwODYsImV4cCI6MTcyNjE1MzQ4Nn0.FBdZgcK8HSNyvk2tl9RKVBT0JtYvaTAenDRmL1tNjlc
 
 {
-    "email": "kunaa@gmail.com",
-    "password": "Kunaal"
+  "title": "Sample Blog Post",
+  "des": "A concise guide to web development, covering key technologies and practices including HTML, CSS, JavaScript frameworks, and backend technologies.",
+  "banner": "http://example.com/banner.jpg",
+  "tags": ["web development", "JavaScript", "React"],
+  "content": [
+    "Introduction to web development.",
+    "Basics of HTML and CSS.",
+    "Overview of JavaScript frameworks like React.",
+    "Backend technologies such as Node.js.",
+    "Deployment strategies with Docker and Kubernetes."
+  ],
+  "draft": false
 }
+
+
+
